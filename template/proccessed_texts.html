@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+   <body> 
+		<div id="first"><h1>Hello There</h1></div>
+         {% for x in length %}
+       
+               
+               {% if pos_ls[x] == "NOUN" %}
+                <span style=color:blue class= {{ pos_ls[x] }}> {{ word_ls[x] }} </span>
+               {% else %}
+               <span class= {{ pos_ls[x] }}> {{ word_ls[x] }} </span>
+               {% endif %}
+           
+		 {% endfor %}
+		 <span class = "noun"> something </span>
+		 
+
+		 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script language="JavaScript" src="/uploads/clickReact.js"></script>
+		
+   </body>
+</html>
